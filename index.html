@@ -28,7 +28,7 @@
                     <div>
                         <div class="flex gap-2">
                             <p><img src="assets/checkbox.png" alt=""></p>
-                            <span ">23</span>
+                            <span id="another-count" ">23</span>
                         </div>
                     </div>
                     
@@ -53,7 +53,7 @@
                         <p><img src="assets/checkbox.png" alt=""></p>
                         <div class="it">
                             <p>Task Assigned</p>
-                            <p>05</p>
+                            <p id="count-display">0</p>
                         </div>
                     </div>
                     <div class="flex items-center">
@@ -68,6 +68,7 @@
             <!-- Card Section -->
             <section class="mt-10">
                 <div class="grid grid-cols-3 gap-4  mx-auto">
+                                  <!-- ShopEase -->
                     <div>
                         <div>
                             <div class="card bg-base-100 w-96 shadow-sm">
@@ -86,7 +87,7 @@
                                             <h2>21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary">Completed</button>
+                                            <button class="btn btn-primary complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -94,14 +95,14 @@
                         </div>
 
                     </div>
-
+                                    <!-- CloudSync -->
                     <div>
                         <div>
                             <div class="card bg-base-100 w-96 shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>ShopEase</h2>
-                                    <h2 class="card-title">Fix Mobile Button Issue </h2>
+                                    <h2>CloudSync</h2>
+                                    <h2 class="card-title">Add Dark Mode </h2>
                                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                         works
                                         properly
@@ -113,7 +114,7 @@
                                             <h2>21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary">Completed</button>
+                                            <button class="btn btn-primary complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -121,14 +122,14 @@
                         </div>
 
                     </div>
-
+                                     <!-- SwiftPay -->
                     <div>
                         <div>
                             <div class="card bg-base-100 w-96 shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>ShopEase</h2>
-                                    <h2 class="card-title">Fix Mobile Button Issue </h2>
+                                    <h2>SwiftPay</h2>
+                                    <h2 class="card-title">Optimize  Home page  </h2>
                                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                         works
                                         properly
@@ -140,7 +141,7 @@
                                             <h2>21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary">Completed</button>
+                                            <button class="btn btn-primary complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -148,14 +149,14 @@
                         </div>
 
                     </div>
-
+                                        <!-- Meta -->
                     <div>
                         <div>
                             <div class="card bg-base-100 w-96 shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>ShopEase</h2>
-                                    <h2 class="card-title">Fix Mobile Button Issue </h2>
+                                    <h2>Meta</h2>
+                                    <h2 class="card-title">Add new emoji 🤲 </h2>
                                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                         works
                                         properly
@@ -167,7 +168,7 @@
                                             <h2>21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary">Completed</button>
+                                            <button class="btn btn-primary complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -175,14 +176,14 @@
                         </div>
 
                     </div>
-
+                                       <!-- Google LLC -->
                     <div>
                         <div>
                             <div class="card bg-base-100 w-96 shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>ShopEase</h2>
-                                    <h2 class="card-title">Fix Mobile Button Issue </h2>
+                                    <h2>Google LLC</h2>
+                                    <h2 class="card-title">Integrate OpenAI API  </h2>
                                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                         works
                                         properly
@@ -194,7 +195,7 @@
                                             <h2>21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary">Completed</button>
+                                            <button class="btn btn-primary complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -202,14 +203,14 @@
                         </div>
 
                     </div>
-
+                                       <!-- Glassdoar -->
                     <div>
                         <div>
                             <div class="card bg-base-100 w-96 shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>ShopEase</h2>
-                                    <h2 class="card-title">Fix Mobile Button Issue </h2>
+                                    <h2>Glassdoar</h2>
+                                    <h2 class="card-title">Improve Job searching  </h2>
                                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                         works
                                         properly
@@ -221,7 +222,7 @@
                                             <h2>21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary">Completed</button>
+                                            <button class="btn btn-primary complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +246,7 @@
         </div>
     </div>
     
-
+<script src="script/index.js"></script>
 </body>
 
 </html>
