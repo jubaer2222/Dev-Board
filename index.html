@@ -61,7 +61,7 @@
                         <p>Discover Something <br> New Today!</p>
                     </div>
                     <div>
-                        <h1>time</h1>
+                        <h1 id="today-date"></h1>
                     </div>
                 </div>
             </section>
@@ -239,14 +239,17 @@
            <section class="mt-12" >
                <div class="flex gap-2 items-center mb-4 ">
                 <p><img src="assets/activity.png" alt=""></p>
-                <p class="font-bold">Activity Log</p>
+                <p class="font-bold" >Activity Log</p>
                </div>
-               <button class="btn btn-primary ">Clear History </button>
+               <button class="btn btn-primary"
+               id="clear-history-btn">Clear History </button>
+                <div id="activity-log"></div> 
            </section>
         </div>
     </div>
     
 <script src="script/index.js"></script>
+<script src="script/date.js"></script>
 </body>
 
 </html>
