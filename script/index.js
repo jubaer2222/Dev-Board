@@ -1,4 +1,4 @@
-  let count = 0;
+  let count = 6;
 
     const buttons = document.querySelectorAll('.complete-btn');
     const countDisplay = document.getElementById('count-display');
@@ -8,13 +8,21 @@
 
     for (const button of buttons) {
         button.addEventListener('click', function () {
-            count++;
+            alert('board updated successfully')
+            count--;
             countDisplay.textContent = count;
 
             const currentAnotherCount = parseInt(anotherCount.textContent);
             anotherCount.textContent = currentAnotherCount + 1;
 
+               // Check all buttons before disabling current button
+            const remainingButtons = Array.from(buttons).filter(btn => btn !== button && !btn.disabled);
+            if (remainingButtons.length === 0) {
+                alert("All Task Complete");
+            }
+
             button.disabled = true;
+            
 
             // Card title খুঁজে বের করে Activity Log এ দেখানো
             const card = button.closest('.card');
