@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="w-10/12 mx-auto">
+<body class="w-10/12 mx-auto bg-[#F4F7FF]">
     <!-- navigation section -->
     <nav>
         <div class="navbar bg-base-100 shadow-sm ">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="flex items-center">
                         <p><img src="assets/board.png" alt=""></p>
-                        <p>Discover Something <br> New Today!</p>
+                        <p id="discover">Discover Something <br> New Today!</p>
                     </div>
                     <div>
                         <h1 id="today-date"></h1>
@@ -236,12 +236,12 @@
 
         <div>
             <!-- Activity Section -->
-           <section class="mt-12" >
-               <div class="flex gap-2 items-center mb-4 ">
+           <section class=" bg-white pt-14" >
+               <div class="flex gap-2 items-center justify-center mb-4 px-32">
                 <p><img src="assets/activity.png" alt=""></p>
                 <p class="font-bold" >Activity Log</p>
                </div>
-               <button class="btn btn-primary"
+               <button class="btn btn-primary flex mx-auto"
                id="clear-history-btn">Clear History </button>
                 <div id="activity-log"></div> 
            </section>
@@ -250,6 +250,7 @@
     
 <script src="script/index.js"></script>
 <script src="script/date.js"></script>
+<script src="script/index-navigation.js"></script>
 </body>
 
 </html>
