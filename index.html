@@ -7,6 +7,26 @@
     <title>Dev Board</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    #activity-log {
+        margin-top: 20px;
+        padding: 10px;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    #activity-log p {
+        background: white;
+        padding: 8px 12px;
+        margin-bottom: 8px;
+        border-left: 4px solid #3b82f6; /* blue-500 রঙের মত */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        font-size: 14px;
+    }
+</style>
+
 </head>
 
 <body class="w-10/12 mx-auto bg-[#F4F7FF]">
@@ -28,7 +48,7 @@
                     <div>
                         <div class="flex gap-2">
                             <p><img src="assets/checkbox.png" alt=""></p>
-                            <span id="another-count" ">23</span>
+                            <span id="another-count" >23</span>
                         </div>
                     </div>
                     
