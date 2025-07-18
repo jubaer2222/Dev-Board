@@ -17,29 +17,25 @@
         font-family: 'Poppins', sans-serif;
     }
 
-
-    #activity-log {
+     #activity-log {
         margin-top: 20px;
-        padding: 10px;
-        background: #f9f9f9;
-        border: 1px solid #ccc;
-        border-radius: 8px;
+        padding: 16px; 
+        border-radius: 0.5rem; 
     }
 
     #activity-log p {
-        background: white;
-        padding: 8px 12px;
+        background-color: #F4F7FF; 
+        padding: 12px;
+        border-radius: 0.375rem; 
+        font-size: 16px;
         margin-bottom: 8px;
-        border-left: 4px solid #3b82f6; /* blue-500 রঙের মত */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
-        font-size: 14px;
     }
+
 </style>
 
 </head>
 
-<body class="w-11/12 mx-auto px-20 bg-[#F4F7FF]">
+<body id="main-body" class="w-11/12 mx-auto px-14 bg-[#F4F7FF]">
     <!-- navigation section -->
     <nav class="pt-6">
         <div class="navbar flex justify-between  py-4 px-6 rounded-xl items-center bg-base-100 shadow-sm ">
@@ -63,10 +59,10 @@
                     </div>
                     
                 </div>
-                <div>
-                    <button><img src=" assets/theme-btn.png" alt=""></button>
-                        </div>
-                    </div>
+                
+                 <img id="bg-btn" class="cursor-pointer" src=" assets/theme-btn.png" alt="">
+               
+                  
 
                 </div>
 
@@ -75,7 +71,7 @@
     </nav>
     <!-- Discover , card and activity -->
     <div class="flex gap-11 pb-16 justify-between">
-        <div class="bg-white rounded-2xl mt-5 py-6 px-6">
+        <div class="bg-white w-9/12 rounded-2xl mt-5 py-9 px-6">
             <!-- Discover section -->
             <section class="">
                 <div class="flex justify-between items-center">
@@ -98,181 +94,155 @@
             </section>
             <!-- Card Section -->
             <section class="mt-10">
-                <div class="grid grid-cols-3 gap-4  mx-auto">
+                <div class="grid grid-cols-3 gap-8  mx-auto">
                                   <!-- ShopEase -->
-                    <div>
-                        <div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
+                   
+                 
+                            <div class="card bg-[#F4F7FF] p-3  shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>ShopEase</h2>
-                                    <h2 class="card-title">Fix Mobile Button Issue </h2>
-                                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                        works
-                                        properly
-                                        and ensure onClick works properly
+                                    <h2 class="text-[#00303C] bg-white px-3 py-2 w-24 rounded-lg">ShopEase</h2>
+                                    <h2 class="card-title mt-3 mb-2 text-[#00303C] text-2xl font-medium">Fix Mobile Button Issue </h2>
+                                    <p class="bg-white p-3 rounded-lg mb-2 text-[#9F9F9F]">Ensure all mobile buttons respond to user actions....
+                                       
+                                       
                                     </p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h3>Deadline</h3>
-                                            <h2>21 March 2025</h2>
+                                    <div class="flex items-center justify-between border-t pt-4 border-dashed border-gray-300">
+                                        <div class="text-[#00303C]">
+                                            <h3 class="text-sm">Deadline</h3>
+                                            <h2 class="font-medium">27 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary complete-btn">Completed</button>
+                                            <button class="btn bg-[#3752FD] text-white complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
+                       
+                  
                                     <!-- CloudSync -->
-                    <div>
-                        <div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
+                    
+                           <div class="card bg-[#F4F7FF] p-3  shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>CloudSync</h2>
-                                    <h2 class="card-title">Add Dark Mode </h2>
-                                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                        works
-                                        properly
-                                        and ensure onClick works properly
+                                    <h2 class="text-[#00303C] bg-white px-3 py-2 w-24 rounded-lg">CloudSync</h2>
+                                    <h2 class="card-title mt-3 mb-2 text-[#00303C] text-2xl font-medium">Add Dark Mode</h2>
+                                    <p class="bg-white p-3 rounded-lg mb-2 text-[#9F9F9F]">Implement theme toggle with smooth color transitions...
                                     </p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h3>Deadline</h3>
-                                            <h2>21 March 2025</h2>
+                                    <div class="flex items-center justify-between border-t pt-4 border-dashed border-gray-300">
+                                        <div class="text-[#00303C]">
+                                            <h3 class="text-sm">Deadline</h3>
+                                            <h2 class="font-medium">11 April 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary complete-btn">Completed</button>
+                                            <button class="btn bg-[#3752FD] text-white complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
+                        
                                      <!-- SwiftPay -->
-                    <div>
-                        <div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
+                                      <div class="card bg-[#F4F7FF] p-3  shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>SwiftPay</h2>
-                                    <h2 class="card-title">Optimize  Home page  </h2>
-                                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                        works
-                                        properly
-                                        and ensure onClick works properly
+                                    <h2 class="text-[#00303C] bg-white px-3 py-2 w-21 rounded-lg">SwiftPay</h2>
+                                    <h2 class="card-title mt-3 mb-2 text-[#00303C] text-2xl font-medium">Optimize  Home page</h2>
+                                    <p class="bg-white p-3 rounded-lg mb-2 text-[#9F9F9F]">Reduce loading time and enhance user interface...
                                     </p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h3>Deadline</h3>
-                                            <h2>21 March 2025</h2>
+                                    <div class="flex items-center justify-between border-t pt-4 border-dashed border-gray-300">
+                                        <div class="text-[#00303C]">
+                                            <h3 class="text-sm">Deadline</h3>
+                                            <h2 class="font-medium">5 April 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary complete-btn">Completed</button>
+                                            <button class="btn bg-[#3752FD] text-white complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
+                   
+                            
+                        
                                         <!-- Meta -->
-                    <div>
-                        <div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
+
+                                        <div class="card bg-[#F4F7FF] p-3  shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>Meta</h2>
-                                    <h2 class="card-title">Add new emoji 🤲 </h2>
-                                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                        works
-                                        properly
-                                        and ensure onClick works properly
+                                    <h2 class="text-[#00303C] bg-white px-4 py-2 w-16 rounded-lg">Meta</h2>
+                                    <h2 class="card-title mt-3 mb-2 text-[#00303C] text-2xl font-medium">Add new emoji 🤲</h2>
+                                    <p class="bg-white p-3 rounded-lg mb-2 text-[#9F9F9F]">Add fresh emoji options to improve chat experience...
                                     </p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h3>Deadline</h3>
-                                            <h2>21 March 2025</h2>
+                                    <div class="flex items-center justify-between border-t pt-4 border-dashed border-gray-300">
+                                        <div class="text-[#00303C]">
+                                            <h3 class="text-sm">Deadline</h3>
+                                            <h2 class="font-medium">28 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary complete-btn">Completed</button>
+                                            <button class="btn bg-[#3752FD] text-white complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
+                    
+                            
+                        
                                        <!-- Google LLC -->
-                    <div>
-                        <div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
+
+                                       <div class="card bg-[#F4F7FF] p-3  shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>Google LLC</h2>
-                                    <h2 class="card-title">Integrate OpenAI API  </h2>
-                                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                        works
-                                        properly
-                                        and ensure onClick works properly
+                                    <h2 class="text-[#00303C] bg-white px-3 py-2 w-26 rounded-lg">Google LLC</h2>
+                                    <h2 class="card-title mt-3 mb-2 text-[#00303C] text-2xl font-medium">Integrate OpenAI API</h2>
+                                    <p class="bg-white p-3 rounded-lg mb-2 text-[#9F9F9F]">Connect AI services for smarter app features...
                                     </p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h3>Deadline</h3>
-                                            <h2>21 March 2025</h2>
+                                    <div class="flex items-center justify-between border-t pt-4 border-dashed border-gray-300">
+                                        <div class="text-[#00303C]">
+                                            <h3 class="text-sm">Deadline</h3>
+                                            <h2 class="font-medium">24 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary complete-btn">Completed</button>
+                                            <button class="btn bg-[#3752FD] text-white complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
+                    
+                            
+                       
                                        <!-- Glassdoar -->
-                    <div>
-                        <div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
+                                        <div class="card bg-[#F4F7FF] p-3  shadow-sm">
 
                                 <div class="card-body">
-                                    <h2>Glassdoar</h2>
-                                    <h2 class="card-title">Improve Job searching  </h2>
-                                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                        works
-                                        properly
-                                        and ensure onClick works properly
+                                    <h2 class="text-[#00303C] bg-white px-3  py-2 w-24 rounded-lg">Glassdoar</h2>
+                                    <h2 class="card-title mt-3 mb-2 text-[#00303C] text-2xl font-medium">Improve Job searching</h2>
+                                    <p class="bg-white p-3 rounded-lg mb-2 text-[#9F9F9F]">Make job results faster and more accurate for users...
                                     </p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h3>Deadline</h3>
-                                            <h2>21 March 2025</h2>
+                                    <div class="flex items-center justify-between border-t pt-4 border-dashed border-gray-300">
+                                        <div class="text-[#00303C]">
+                                            <h3 class="text-sm">Deadline</h3>
+                                            <h2 class="font-medium">21 March 2025</h2>
                                         </div>
                                         <div class="card-actions justify-end">
-                                            <button class="btn btn-primary complete-btn">Completed</button>
+                                            <button class="btn bg-[#3752FD] text-white complete-btn">Completed</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
+                
+                        
                 </div>
             </section>
         </div>
 
+<!-- Activity Section -->
         <div>
-            <!-- Activity Section -->
-           <section class=" bg-white pt-14" >
-               <div class="flex gap-2 items-center justify-center mb-4 px-32">
+            
+           <section class=" bg-white w-[380px] mt-1 min-h-screen rounded-lg pt-14" >
+               <div class="flex gap-2 items-center justify-center mb-4">
                 <p><img src="assets/activity.png" alt=""></p>
-                <p class="font-bold" >Activity Log</p>
+                <p class="font-medium text-xl" >Activity Log</p>
                </div>
-               <button class="btn btn-primary flex mx-auto"
+               <button class="btn text-white bg-[#3752FD] mt-3 flex mx-auto"
                id="clear-history-btn">Clear History </button>
                 <div id="activity-log"></div> 
            </section>
@@ -282,6 +252,7 @@
 <script src="script/index.js"></script>
 <script src="script/date.js"></script>
 <script src="script/index-navigation.js"></script>
+<script src="script/bg-btn.js"></script>
 </body>
 
 </html>
