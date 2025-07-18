@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+      
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+
     #activity-log {
         margin-top: 20px;
         padding: 10px;
@@ -29,24 +39,24 @@
 
 </head>
 
-<body class="w-10/12 mx-auto bg-[#F4F7FF]">
+<body class="w-11/12 mx-auto px-20 bg-[#F4F7FF]">
     <!-- navigation section -->
-    <nav>
-        <div class="navbar bg-base-100 shadow-sm ">
-            <div class="flex-1 flex">
+    <nav class="pt-6">
+        <div class="navbar flex justify-between  py-4 px-6 rounded-xl items-center bg-base-100 shadow-sm ">
+            <div class=" items-center flex">
                 <div>
                     <img src="assets/logo.png" alt="">
                 </div>
-                <div class="flex-1">
-                    <a class="btn btn-ghost text-xl">DevBoard</a>
+                <div class="">
+                    <a class="btn btn-ghost text-4xl">DevBoard</a>
                 </div>
             </div>
 
-            <div class="flex gap-4">
+            <div class="flex items-center gap-4">
                 <div class="flex-none  ">
 
                     <div>
-                        <div class="flex gap-2">
+                        <div class="flex items-center gap-2">
                             <p><img src="assets/checkbox.png" alt=""></p>
                             <span id="another-count" >23</span>
                         </div>
@@ -64,24 +74,25 @@
 
     </nav>
     <!-- Discover , card and activity -->
-    <div class="flex justify-between">
-        <div>
+    <div class="flex gap-11 pb-16 justify-between">
+        <div class="bg-white rounded-2xl mt-5 py-6 px-6">
             <!-- Discover section -->
-            <section class="mt-12">
+            <section class="">
                 <div class="flex justify-between items-center">
-                    <div class="flex gap-4 items-center">
-                        <p><img src="assets/checkbox.png" alt=""></p>
+                    <div class="flex rounded-lg bg-[#F4F7FF] py-6 px-9 gap-4 items-center">
+                        <p class="rounded-full p-3 flex items-center justify-center bg-white w-16 h-16"><img src="assets/checkbox.png" alt=""></p>
                         <div class="it">
-                            <p>Task Assigned</p>
-                            <p id="count-display">6</p>
+                            <p class="text-[#00303C] font-medium">Task Assigned</p>
+                            <span class="font-bold text-black text-3xl flex items-center gap-1"><p>0</p><p id="count-display"  class=" ">6</p></span>
                         </div>
                     </div>
-                    <div class="flex items-center">
-                        <p><img src="assets/board.png" alt=""></p>
-                        <p id="discover">Discover Something <br> New Today!</p>
+                    <div class="flex gap-4 py-5 px-6 rounded-lg text-white bg-[linear-gradient(130.70deg,_rgb(55,82,253)_0.419%,_rgb(108,127,250)_52.66%,_rgb(155,168,248)_99.733%)] items-center">
+                        <p><img class="h-18 border-2 border-dashed" src="assets/board.png" alt=""></p>
+                        <p id="discover" class="text-2xl font-medium pr-20">Discover Something <br> New Today!</p>
                     </div>
-                    <div>
-                        <h1 id="today-date"></h1>
+                    <div class="flex rounded-lg bg-[#F4F7FF] py-6 px-9 gap-4 items-center">
+                        <img src="assets/calender.png" class="bg-white p-3 rounded-full" alt="">
+                        <h1 class="text-lg" id="today-date"></h1>
                     </div>
                 </div>
             </section>
